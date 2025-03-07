@@ -31,7 +31,7 @@
 
     <link rel="stylesheet" href="customStyle.css" />
     <!-- Title -->
-    <title>Atorn - Law Firm & Attorney Website HTML Template</title>
+    <title>Lawyer</title>
   </head>
   <body>
     <!-- Heder Area -->
