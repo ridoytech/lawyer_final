@@ -91,6 +91,15 @@ if (isset($session_email)) {
                             <li>
                                 <a href="lawyerCategory.php"><i class="fa icon-plus"></i><span> Lawyer Category </span></a>
                             </li>
+                            <li>
+                                <a href="imageGallery.php"><i class="fa icon-plus"></i><span> Image Gallery </span></a>
+                            </li>
+                            <li>
+                                <a href="videoGallery.php"><i class="fa icon-plus"></i><span> Video Gallery </span></a>
+                            </li>
+                            <li>
+                                <a href="blog.php"><i class="fa icon-plus"></i><span>Blog</span></a>
+                            </li>
 
                            
                            

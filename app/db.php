@@ -2,7 +2,7 @@
 session_start();
 
 // $mysqli = new mysqli('localhost', 'teamciph_teamcipher', 'pfjFUWHKTZf9', 'teamciph_teamcipher');
-$mysqli = new mysqli('localhost', 'root', '', 'lawyer');
+$mysqli = new mysqli('localhost', 'root', '', 'lawyer_final');
 
 
 if ($mysqli->connect_error) {
