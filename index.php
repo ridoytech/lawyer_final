@@ -1,3 +1,7 @@
+<?php
+include('app/db.php');
+
+?>
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -263,127 +267,32 @@
         </div>
 
         <div class="row justify-content-center">
+
+            <?php
+              $project = $mysqli->query("SELECT * FROM service_crud");
+              while ($row = $project->fetch_assoc()):
+            ?>
+
+
           <div class="col-lg-4 col-sm-6">
             <div class="service-card">
               <a href="service-details.html">
-                <img src="assets/img/services/service1.jpg" alt="Image" />
+                <img src="app/lawyerCategory/<?php echo ($row['service_image']) ?>" alt="Image" />
               </a>
               <div class="service-text">
                 <i class="las la-city"></i>
                 <h3>
-                  <a href="team.html">EEA <span>Application</span></a>
+                  <a href="lawyer.php?type=<?php echo ($row['service_title']) ?>"> <span><?php echo ($row['service_title']) ?></span></a>
                 </h3>
                 <p>
-                  Seamless processing for European Economic Area applications,
-                  ensuring a smooth transition for individuals seeking residency
-                  in the EEA
+                  <?php echo ($row['service_des']) ?>
                 </p>
               </div>
             </div>
           </div>
+          <?php endwhile; ?>
 
-          <div class="col-lg-4 col-sm-6">
-            <div class="service-card">
-              <a href="service-details.html">
-                <img src="assets/img/services/service2.jpg" alt="Image" />
-              </a>
-              <div class="service-text">
-                <i class="las la-users"></i>
-                <h3>
-                  <a href="service-details.html"
-                    >British <span>Citizenship</span></a
-                  >
-                </h3>
-                <p>
-                  Dedicated services to facilitate the path to British
-                  citizenship, ensuring a smooth transition and compliance with
-                  legal requirements.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="service-card">
-              <a href="service-details.html">
-                <img src="assets/img/services/service3.jpg" alt="Image" />
-              </a>
-              <div class="service-text">
-                <i class="las la-user"></i>
-                <h3>
-                  <a href="service-details.html"
-                    >Business <span>Migration</span></a
-                  >
-                </h3>
-                <p>
-                  Strategic counsel for business migration, helping
-                  entrepreneurs and professionals navigate legal complexities
-                  for successful migration and establishment..
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="service-card">
-              <a href="service-details.html">
-                <img src="assets/img/services/service4.jpg" alt="Image" />
-              </a>
-              <div class="service-text">
-                <i class="las la-broadcast-tower"></i>
-                <h3>
-                  <a href="service-details.html"
-                    >Detention <span>Matters</span></a
-                  >
-                </h3>
-                <p>
-                  Expert guidance in legal matters related to detention,
-                  securing the rights and freedoms of individuals facing
-                  detainment.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="service-card">
-              <a href="service-details.html">
-                <img src="assets/img/services/service5.jpg" alt="Image" />
-              </a>
-              <div class="service-text">
-                <i class="las la-balance-scale"></i>
-                <h3>
-                  <a href="service-details.html"
-                    >Immigration <span>Application</span></a
-                  >
-                </h3>
-                <p>
-                  Tailored support for various immigration applications,
-                  streamlining the process for a hassle-free experience.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="service-card">
-              <a href="service-details.html">
-                <img src="assets/img/services/service6.jpg" alt="Image" />
-              </a>
-              <div class="service-text">
-                <i class="las la-balance-scale-right"></i>
-                <h3>
-                  <a href="service-details.html"
-                    >Family/Dependent <span>Application</span></a
-                  >
-                </h3>
-                <p>
-                  Professional guidance for family and dependent applications,
-                  uniting families through meticulous legal processes.
-                </p>
-              </div>
-            </div>
-          </div>
+       
         </div>
       </div>
     </div>

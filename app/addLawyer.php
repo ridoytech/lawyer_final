@@ -26,11 +26,13 @@ include('db.php');
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/vendor/toastr/toastr.min.css">
     <link rel="stylesheet" href="assets/vendor/charts-c3/plugin.css" />
-    <link rel="stylesheet" href="assets/vendor/summernote/dist/summernote.css" />
-    <link rel="stylesheet" href="app/assets/dist/summernote.css" />
+  
+ 
 
     <!-- MAIN Project CSS file -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- <link rel="stylesheet" href="custom.css"> -->
+    <link rel="stylesheet" href="assets/dist/summernote.css" />
 </head>
 
 <body data-theme="light" class="font-nunito">
@@ -303,34 +305,43 @@ include('db.php');
 
                                             <h6 style="margin-top:20px"><strong>Lawyer Education, Biography and Research Information</strong></h6>
                                             <hr>
+
+ 
+
                                             
                                             <div class="row clearfix">
 
-                                                <div class="col-lg-4 col-md-12">
-                                                    <label for="">Lawyer Education Qualification</label>
-                                                    <div class="form-group">
-                                                        <input type="text" name="education_qualification" class="form-control summernote" placeholder="Type Education Qualification ">
+                                                    <div class="col-lg-4 col-md-12">
+                                                        <label for="">Lawyer Education Qualification</label>
+                                                        <div class="form-group">
+                                                        <textarea class="summernote"  name="education_qualification" id=""></textarea>
+
+                                                        
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="col-lg-4 col-md-12">
-                                                    <label for="">Lawyer Biography </label>
-                                                    <div class="form-group">
-                                                        <input type="text" name="lawyer_biography" class="form-control summernote" placeholder="Type lawyer biography">
+                                                    <div class="col-lg-4 col-md-12">
+                                                        <label for="">Lawyer Biography </label>
+                                                        <div class="form-group">
+                                                            <textarea class="summernote" name="lawyer_biography" id=""></textarea>
+
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                                <div class="col-lg-4 col-md-12">
-                                                    <label for="">Lawyer Research </label>
-                                                    <div class="form-group">
-                                                        <input type="text" name="lawyer_research" class="form-control summernote" placeholder="Type lawyer research  ">
+                                                    <div class="col-lg-4 col-md-12">
+                                                    
+
+                                                        <label for="">Lawyer Research </label>
+                                                        <div class="form-group">
+                                                        <textarea class="summernote" name="lawyer_research" id=""></textarea>
+                                                        
+                                                        </div>
                                                     </div>
-                                                </div>
 
-                                           
-     
 
-                                            </div>
+
+
+                                                    </div>
 
 
 
@@ -387,9 +398,11 @@ include('db.php');
 
     <!-- page js file -->
     <script src="assets/bundles/mainscripts.bundle.js"></script>
-    <script src="assets/vendor/summernote/dist/summernote.js"></script>
+    <!-- <script src="assets/vendor/summernote/dist/summernote.js"></script> -->
     <script src="js/index.js"></script>
-    <script src="app/assets/dist/summernote.js"></script>
+    <script src="assets/dist/summernote.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <!-- <script src="app/assets/dist/summernote.js"></script> -->
 </body>
 
 

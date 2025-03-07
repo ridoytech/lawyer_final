@@ -167,6 +167,7 @@ if (isset($_POST['add_lawyer'])) {
   $end_time_6 = $_POST['end_time_6'];
   $education_qualification = $_POST['education_qualification'];
 
+
   $lawyer_picture = $_FILES['lawyer_picture']['name'];
   $tmpName = $_FILES['lawyer_picture']['tmp_name'];
   $folder = 'lawyerPicture/' . $lawyer_picture;
@@ -186,9 +187,9 @@ if (isset($_POST['add_lawyer'])) {
 if (isset($_POST['update_lawyer'])) {
   $lawyer_id = $_POST['id'];
   $lawyer_name = $_POST['lawyer_name'];
+  // echo $lawyer_name;
+  // die();
   $lawyer_type = $_POST['lawyer_type'];
-  $lawyer_biography = $_POST['lawyer_biography'];
-  $lawyer_research = $_POST['lawyer_research'];
   $lawyer_address = $_POST['lawyer_address'];
   $day_1 = $_POST['day_1'];
   $start_time_1 = $_POST['start_time_1'];
@@ -209,6 +210,12 @@ if (isset($_POST['update_lawyer'])) {
   $start_time_6 = $_POST['start_time_6'];
   $end_time_6 = $_POST['end_time_6'];
   $education_qualification = $_POST['education_qualification'];
+  $lawyer_biography = $_POST['lawyer_biography'];
+  $lawyer_research = $_POST['lawyer_research'];
+ 
+  // echo $lawyer_research;
+  // die();
+
 
 
   $lawyer_picture = $_FILES['lawyer_picture']['name'];
@@ -223,7 +230,7 @@ if (isset($_POST['update_lawyer'])) {
   $folder = 'lawyerPicture/' . $lawyer_picture;
 
 
-  $mysqli->query("UPDATE `lawyer_crud` SET `lawyer_name` = '$lawyer_name', `lawyer_type` = '$lawyer_type', `lawyer_biography` = '$lawyer_biography', `lawyer_research` = '$lawyer_research', `lawyer_address` = '$lawyer_address', `day_1` = '$day_1', `start_time_1` = '$start_time_1', `end_time_1` = '$end_time_1', `day_2` = '$day_2', `start_time_2` = '$start_time_2', `end_time_2` = '$end_time_2', `day_3` = '$day_3', `start_time_3` = '$start_time_3', `end_time_3` = '$end_time_3', `day_4` = '$day_4', `start_time_4` = '$start_time_4', `end_time_4` = '$end_time_4', `day_5` = '$day_5', `start_time_5` = '$start_time_5', `end_time_5` = '$end_time_5', `day_6` = '$day_6', `start_time_6` = '$start_time_6', `end_time_6` = '$end_time_6', `lawyer_picture` = '$lawyer_picture' WHERE id=$lawyer_id");
+  $mysqli->query("UPDATE `lawyer_crud` SET `lawyer_name` = '$lawyer_name', `lawyer_type` = '$lawyer_type', `lawyer_address` = '$lawyer_address', `day_1` = '$day_1', `start_time_1` = '$start_time_1', `end_time_1` = '$end_time_1', `day_2` = '$day_2', `start_time_2` = '$start_time_2', `end_time_2` = '$end_time_2', `day_3` = '$day_3', `start_time_3` = '$start_time_3', `end_time_3` = '$end_time_3', `day_4` = '$day_4', `start_time_4` = '$start_time_4', `end_time_4` = '$end_time_4', `day_5` = '$day_5', `start_time_5` = '$start_time_5', `end_time_5` = '$end_time_5', `day_6` = '$day_6', `start_time_6` = '$start_time_6', `end_time_6` = '$end_time_6',`lawyer_biography` = '$lawyer_biography', `lawyer_research` = '$lawyer_research', `lawyer_picture` = '$lawyer_picture' WHERE id=$lawyer_id");
   move_uploaded_file($tmpName, $folder);
 
   $_SESSION['message'] = "Lawyer has been Successfully";

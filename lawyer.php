@@ -1,6 +1,9 @@
+<?php
+include('app/db.php');
+
+?>
 <!DOCTYPE html>
 <html lang="zxx">
-  <!-- Mirrored from templates.hibootstrap.com/atorn/default/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 18:41:48 GMT -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -231,264 +234,38 @@
         </div>
 
         <div class="row justify-content-center">
+        <?php
+
+
+            $project = $mysqli->query("SELECT * FROM lawyer_crud");
+
+
+            // Fetch and display the titles
+            while ($row = $project->fetch_assoc()):
+
+            ?>
+
           <div class="col-lg-4 col-sm-6">
             <div class="attorney-card">
-              <a href="attorney-details.html">
+              <a href="lawyerDetail.php?lawyer_id=<?php echo ($row['id']) ?>">
                 <img src="assets/img/attorney/attorney1.jpg" alt="Image" />
               </a>
               <div class="attorney-card-text">
-                <h3><a href="attorney-details.html">Thomas Daniyel</a></h3>
+                <h3><a href="lawyerDetail.php?lawyer_id=<?php echo ($row['id']) ?>"><?php echo ($row['lawyer_name']) ?></a></h3>
                 <p>Senior Attorney</p>
 
                 <div class="about-btn">
-                  <a href="teamDetails.html" class="default-btn-one"
-                    >Book Now</a
-                  >
+                  <a href="lawyerDetail.php?lawyer_id=<?php echo ($row['id']) ?>" class="default-btn-one">Book Now</a>
                 </div>
               </div>
             </div>
           </div>
+          <?php endwhile; ?>
 
-          <div class="col-lg-4 col-sm-6">
-            <div class="attorney-card">
-              <a href="attorney-details.html">
-                <img src="assets/img/attorney/attorney2.jpg" alt="Image" />
-              </a>
-              <div class="attorney-card-text">
-                <h3><a href="attorney-details.html">Nikolson Gail</a></h3>
-                <p>Corporate Lawyer</p>
-                <div class="about-btn">
-                  <a href="teamDetails.html" class="default-btn-one"
-                    >Book Now</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="attorney-card">
-              <a href="attorney-details.html">
-                <img src="assets/img/attorney/attorney3.jpg" alt="Image" />
-              </a>
-              <div class="attorney-card-text">
-                <h3><a href="attorney-details.html">Thanos Daniyel</a></h3>
-                <p>Family Consultant</p>
-                <div class="about-btn">
-                  <a href="teamDetails.html" class="default-btn-one"
-                    >Book Now</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="attorney-card">
-              <a href="attorney-details.html">
-                <img src="assets/img/attorney/attorney4.jpg" alt="Image" />
-              </a>
-              <div class="attorney-card-text">
-                <h3><a href="attorney-details.html">John Doe</a></h3>
-                <p>Senior Attorney</p>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/login/" target="_blank">
-                      <i class="lab la-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/i/flow/login" target="_blank">
-                      <i class="lab la-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="lab la-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.google.co.uk/" target="_blank">
-                      <i class="lab la-google-plus"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="attorney-card">
-              <a href="attorney-details.html">
-                <img src="assets/img/attorney/attorney5.jpg" alt="Image" />
-              </a>
-              <div class="attorney-card-text">
-                <h3><a href="attorney-details.html">Pery Henry</a></h3>
-                <p>Corporate Lawyer</p>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/login/" target="_blank">
-                      <i class="lab la-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/i/flow/login" target="_blank">
-                      <i class="lab la-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="lab la-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.google.co.uk/" target="_blank">
-                      <i class="lab la-google-plus"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="attorney-card">
-              <a href="attorney-details.html">
-                <img src="assets/img/attorney/attorney6.jpg" alt="Image" />
-              </a>
-              <div class="attorney-card-text">
-                <h3><a href="attorney-details.html">Milthon Hence</a></h3>
-                <p>Family Lawyer</p>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/login/" target="_blank">
-                      <i class="lab la-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/i/flow/login" target="_blank">
-                      <i class="lab la-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="lab la-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.google.co.uk/" target="_blank">
-                      <i class="lab la-google-plus"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="attorney-card">
-              <a href="attorney-details.html">
-                <img src="assets/img/attorney/attorney7.jpg" alt="Image" />
-              </a>
-              <div class="attorney-card-text">
-                <h3><a href="attorney-details.html">Hillary Fin</a></h3>
-                <p>Business Lawyer</p>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/login/" target="_blank">
-                      <i class="lab la-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/i/flow/login" target="_blank">
-                      <i class="lab la-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="lab la-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.google.co.uk/" target="_blank">
-                      <i class="lab la-google-plus"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="attorney-card">
-              <a href="attorney-details.html">
-                <img src="assets/img/attorney/attorney8.jpg" alt="Image" />
-              </a>
-              <div class="attorney-card-text">
-                <h3><a href="attorney-details.html">Karlos Bentham</a></h3>
-                <p>Divorce Lawyer</p>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/login/" target="_blank">
-                      <i class="lab la-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/i/flow/login" target="_blank">
-                      <i class="lab la-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="lab la-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.google.co.uk/" target="_blank">
-                      <i class="lab la-google-plus"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-sm-6">
-            <div class="attorney-card">
-              <a href="attorney-details.html">
-                <img src="assets/img/attorney/attorney9.jpg" alt="Image" />
-              </a>
-              <div class="attorney-card-text">
-                <h3><a href="attorney-details.html">Niccy Priti</a></h3>
-                <p>Corporate Lawyer</p>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/login/" target="_blank">
-                      <i class="lab la-facebook-f"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/i/flow/login" target="_blank">
-                      <i class="lab la-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i class="lab la-instagram"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.google.co.uk/" target="_blank">
-                      <i class="lab la-google-plus"></i>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+         
 
           <!-- Pagination -->
-          <div class="col-lg-12 col-md-12">
+          <!-- <div class="col-lg-12 col-md-12">
             <ul class="pagination">
               <li class="page-item">
                 <a class="page-link" href="team.html" aria-label="Previous">
@@ -510,7 +287,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

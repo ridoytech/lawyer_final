@@ -61,11 +61,14 @@ if (isset($_GET['lawyer_id'])) {
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/vendor/toastr/toastr.min.css">
     <link rel="stylesheet" href="assets/vendor/charts-c3/plugin.css" />
-    <link rel="stylesheet" href="assets/vendor/summernote/dist/summernote.css" />
-    <link rel="stylesheet" href="app/assets/dist/summernote.css" />
+    <!-- <link rel="stylesheet" href="assets/vendor/summernote/dist/summernote.css" /> -->
+ 
+  
 
     <!-- MAIN Project CSS file -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- <link rel="stylesheet" href="assets/dist/summernote.css" /> -->
+    <link rel="stylesheet" href="assets/dist/summernote.css" />
 </head>
 
 <body data-theme="light" class="font-nunito">
@@ -155,7 +158,7 @@ if (isset($_GET['lawyer_id'])) {
                                                 <div class="col-lg-4 col-md-12">
                                                 <label for="">Address</label>
                                                     <div class="form-group">
-                                                        <input type="text" name="lawyer_address"  value="<?php echo $lawyer_address ?>" class="form-control" placeholder="Type Lawyer Address ">
+                                                        <input type="text" name="lawyer_address"  value="<?php echo $lawyer_address ?>" class="form-control " placeholder="Type Lawyer Address ">
                                                     </div>
                                                 </div>
 
@@ -345,21 +348,27 @@ if (isset($_GET['lawyer_id'])) {
                                                 <div class="col-lg-4 col-md-12">
                                                     <label for="">Lawyer Education Qualification</label>
                                                     <div class="form-group">
-                                                        <input type="text" name="education_qualification" value="<?php echo $education_qualification ?>" class="form-control summernote" placeholder="Type Education Qualification ">
+                                                    <textarea class="summernote" placeholder="Type Education Qualification " name="education_qualification" id=""><?php echo $education_qualification ?></textarea>
+                                               
+                                                      
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-4 col-md-12">
                                                     <label for="">Lawyer Biography </label>
                                                     <div class="form-group">
-                                                        <input type="text" name="lawyer_biography" value="<?php echo $lawyer_biography ?>" class="form-control summernote" placeholder="Type lawyer biography">
+                                                        <textarea class="summernote" name="lawyer_biography" id=""><?php echo $lawyer_biography ?></textarea>
+                                               
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-4 col-md-12">
+                                                   
+
                                                     <label for="">Lawyer Research </label>
                                                     <div class="form-group">
-                                                        <input type="text" name="lawyer_research" value="<?php echo $lawyer_research ?>" class="form-control summernote" placeholder="Type lawyer research  ">
+                                                    <textarea class="summernote" name="lawyer_research" id=""><?php echo $lawyer_research ?></textarea>
+                                                      
                                                     </div>
                                                 </div>
 
@@ -420,12 +429,15 @@ if (isset($_GET['lawyer_id'])) {
     <!-- page vendor js file -->
     <script src="assets/vendor/toastr/toastr.js"></script>
     <script src="assets/bundles/c3.bundle.js"></script>
+    <!-- <script src="assets/dist/summernote.js"></script> -->
+    <script src="assets/dist/summernote.js"></script>
 
     <!-- page js file -->
     <script src="assets/bundles/mainscripts.bundle.js"></script>
-    <script src="assets/vendor/summernote/dist/summernote.js"></script>
+   
     <script src="js/index.js"></script>
-    <script src="app/assets/dist/summernote.js"></script>
+    <!-- <script src="assets/vendor/summernote/dist/summernote.js"></script> -->
+
 </body>
 
 
