@@ -1,0 +1,26 @@
+.atorn-gallery {
+    position: relative;
+    overflow: hidden;
+}
+.atorn-gallery iframe {
+    width: 100%;
+    height: 200px; /* আপনার পছন্দমতো উচ্চতা সেট করুন */
+    display: block;
+}
+.atorn-gallery .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.atorn-gallery:hover .caption {
+    opacity: 1;
+}
+.atorn-gallery .caption i {
+    color: #fff;
+    font-size: 30px;
+}

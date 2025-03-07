@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <!-- Mirrored from templates.hibootstrap.com/atorn/default/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 18:41:45 GMT -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <!-- Meanmenu CSS -->
+    <link rel="stylesheet" href="assets/css/meanmenu.min.css" />
+    <!-- Line Awesome CSS -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+    <!-- Magnific CSS -->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <!-- Owl Theme CSS -->
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <!-- Odometer CSS -->
+    <link rel="stylesheet" href="assets/css/odometer.css" />
+    <!-- Stylesheet CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Stylesheet Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- Theme Dark CSS -->
+    <link rel="stylesheet" href="assets/css/theme-dark.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+    <!-- Title -->
+    <title>Atorn - Law Firm & Attorney Website HTML Template</title>
+  </head>
+  <body>
+    <!-- Preloder Area -->
+    <div class="preloader">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="lds-hourglass"></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Preloder Area -->
+
+    <!-- Heder Area -->
+    <header class="header-area">
+      <div class="top-header">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 col-sm-6">
+              <ul class="left-info">
+                <li>
+                  <a
+                    href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#49212c25252609283d263b27672a2624"
+                  >
+                    <i class="las la-envelope"></i>
+                    <span
+                      class="__cf_email__"
+                      data-cfemail="ff979a939390bf9e8b908d91d19c9092"
+                      >[email&#160;protected]</span
+                    >
+                  </a>
+                </li>
+                <li>
+                  <a href="tel:+823-456-879">
+                    <i class="las la-phone"></i>
+                    +0123 456 789
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-6 col-sm-6">
+              <ul class="right-info">
+                <li>
+                  <a href="https://www.facebook.com/login/" target="_blank">
+                    <i class="lab la-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/i/flow/login" target="_blank">
+                    <i class="lab la-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <i class="lab la-instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.google.co.uk/" target="_blank">
+                    <i class="lab la-google-plus"></i>
+                  </a>
+                </li>
+
+                <li class="heder-btn">
+                  <a href="contact.html">Get A Schedule</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Start Navbar Area -->
+      <div class="navbar-area">
+        <div class="atorn-responsive-nav">
+          <div class="container">
+            <div class="atorn-responsive-menu">
+              <div class="logo">
+                <a href="index.html">
+                  <img src="assets/img/logo.png" class="logo1" alt="logo" />
+                  <img
+                    src="assets/img/logo-white.png"
+                    class="logo2"
+                    alt="logo"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="atorn-nav">
+          <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.png" class="logo1" alt="logo" />
+                <img src="assets/img/logo-white.png" class="logo2" alt="logo" />
+              </a>
+
+              <div class="collapse navbar-collapse mean-menu">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link active"> Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="fees.html" class="nav-link">Fees</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="team.html" class="nav-link">Our Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="caseStudy.html" class="nav-link">Case Studies</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="services.html" class="nav-link"> Services </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="blog.html" class="nav-link">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:void(0)" class="nav-link search-box">
+                      <i class="las la-search"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- End Navbar Area -->
+    </header>
+    <!-- End Heder Area -->
+
+    <!-- Search Overlay -->
+    <div class="search-overlay">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="search-overlay-layer"></div>
+          <div class="search-overlay-layer"></div>
+          <div class="search-overlay-layer"></div>
+
+          <div class="search-overlay-close">
+            <span class="search-overlay-close-line"></span>
+            <span class="search-overlay-close-line"></span>
+          </div>
+
+          <div class="search-overlay-form">
+            <form>
+              <input
+                type="text"
+                class="input-search"
+                placeholder="Search here..."
+              />
+              <button type="submit"><i class="las la-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Search Overlay -->
+
+    <!-- Page banner Area -->
+    <div class="page-banner bg-1">
+      <div class="d-table">
+        <div class="d-table-cell">
+          <div class="container">
+            <div class="page-content">
+              <h2>Contact Us</h2>
+              <ul>
+                <li>
+                  <a href="index.html"
+                    >Home <i class="las la-angle-right"></i
+                  ></a>
+                </li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Page banner Area -->
+
+    <!-- Contact Area -->
+    <div class="contact-area contact-two ptb-100">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6">
+            <div class="contact-text">
+              <div class="section-title">
+                <h2>Contact Us Today, Get In Touch With Expert</h2>
+              </div>
+
+              <div class="row justify-content-center">
+                <div class="col-lg-6">
+                  <div class="contact-card">
+                    <span>Phone Number</span>
+                    <h3><a href="tel:++44 02033936789">+44 02033936789</a></h3>
+                  </div>
+                </div>
+
+                <div class="col-lg-6">
+                  <div class="contact-card">
+                    <span>Our Social Link</span>
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/login/"
+                          target="_blank"
+                        >
+                          <i class="lab la-facebook-f"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://twitter.com/i/flow/login"
+                          target="_blank"
+                        >
+                          <i class="lab la-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                          <i class="lab la-instagram"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://www.google.co.uk/" target="_blank">
+                          <i class="lab la-google-plus"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="section-title">
+              <span>Contact Form</span>
+              <h2>Get A Flexible Schedule</h2>
+            </div>
+            <div class="contact-form">
+              <form id="contactForm">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="name"
+                        required
+                        data-error="Please enter your name"
+                        placeholder="Full name"
+                      />
+                      <div class="help-block with-errors"></div>
+                      <i class="las la-user"></i>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        id="email"
+                        required
+                        data-error="Please enter your email"
+                        placeholder="Email address"
+                      />
+                      <div class="help-block with-errors"></div>
+                      <i class="las la-envelope"></i>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="email"
+                        class="form-control"
+                        id="Phone"
+                        required
+                        data-error="Please enter your phone"
+                        placeholder="Phone No"
+                      />
+                      <div class="help-block with-errors"></div>
+                      <i class="las la-phone"></i>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name="email"
+                        class="form-control"
+                        id="subject"
+                        required
+                        data-error="Please enter your subject"
+                        placeholder="Your subject"
+                      />
+                      <div class="help-block with-errors"></div>
+                      <i class="las la-id-card"></i>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12">
+                    <div class="form-group">
+                      <textarea
+                        name="message"
+                        id="message"
+                        class="form-control"
+                        cols="30"
+                        rows="6"
+                        required
+                        data-error="Please enter your message"
+                        placeholder="Write your message..."
+                      ></textarea>
+                      <div class="help-block with-errors"></div>
+                      <i class="las la-sms"></i>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12">
+                    <div class="form-group">
+                      <div class="form-check agree-label">
+                        <input
+                          name="gridCheck"
+                          value="I agree to the terms and privacy policy."
+                          class="form-check-input"
+                          type="checkbox"
+                          id="gridCheck"
+                          required
+                        />
+
+                        <label class="form-check-label" for="gridCheck">
+                          Accept
+                          <a href="terms-condition.html">Terms & Conditions</a>
+                          And <a href="privacy-policy.html">Privacy Policy.</a>
+                        </label>
+                        <div
+                          class="help-block with-errors gridCheck-error"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12">
+                    <button type="submit" class="default-btn-one">
+                      Get An Appointment
+                    </button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    <div class="clearfix"></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Contact Area -->
+
+    <!-- Footer Area-->
+    <footer class="footer-area pt-100 pb-70">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-5 col-sm-6">
+              <div class="footer-widget">
+                <div class="logo">
+                  <img src="assets/img/logo-white.png" alt="logo" />
+                </div>
+                <p>
+                  Ston Bridge is a leading law firm with 25 years of experience,
+                  dedicated to providing expert legal services across various
+                  fields. Our commitment to justice and client success makes us
+                  your trusted legal partner.
+                </p>
+  
+                <ul class="footer-socials">
+                  <li>
+                    <a href="https://www.facebook.com/login/" target="_blank">
+                      <i class="lab la-facebook-f"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/i/flow/login" target="_blank">
+                      <i class="lab la-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.instagram.com/" target="_blank">
+                      <i class="lab la-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.google.co.uk/" target="_blank">
+                      <i class="lab la-google-plus"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-sm-6">
+              <div class="footer-widget">
+                <h3>Quick Links</h3>
+  
+                <ul class="footer-text">
+                  <li>
+                    <a href="index.html">
+                      <i class="las la-star"></i>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="about.html">
+                      <i class="las la-star"></i>
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="services.html">
+                      <i class="las la-star"></i>
+                      Our Services
+                    </a>
+                  </li>
+                  <li>
+                    <a href="caseStudy.html">
+                      <i class="las la-star"></i>
+                      Case Study
+                    </a>
+                  </li>
+                  <li>
+                    <a href="blog.html">
+                      <i class="las la-star"></i>
+                      Our Blog
+                    </a>
+                  </li>
+  
+                  <li>
+                    <a href="team.html">
+                      <i class="las la-star"></i>
+                      Our Attorneys
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-2 col-sm-6">
+              <div class="footer-widget pl-50">
+                <h3>Services</h3>
+  
+                <ul class="footer-text">
+                  <li>
+                    <a href="team.html">
+                      <i class="las la-star"></i>
+                      Civil Law
+                    </a>
+                  </li>
+                  <li>
+                    <a href="team.html">
+                      <i class="las la-star"></i>
+                      Family Law
+                    </a>
+                  </li>
+                  <li>
+                    <a href="team.html">
+                      <i class="las la-star"></i>
+                      Cyber Law
+                    </a>
+                  </li>
+                  <li>
+                    <a href="team.html">
+                      <i class="las la-star"></i>
+                      Education Law
+                    </a>
+                  </li>
+                  <li>
+                    <a href="team.html">
+                      <i class="las la-star"></i>
+                      Business Law
+                    </a>
+                  </li>
+                  <li>
+                    <a href="team.html">
+                      <i class="las la-star"></i>
+                      Investment Law
+                    </a>
+                  </li>
+                  <li>
+                    <a href="team.html">
+                      <i class="las la-star"></i>
+                      Criminal Law
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-lg-3 col-sm-6">
+              <div class="footer-widget">
+                <h3>Contact Info</h3>
+  
+                <ul class="info-list">
+                  <li>
+                    <i class="las la-phone"></i>
+                    <a href="tel:+44 02033936789">+44 02033936789</a>
+                  </li>
+                  <li>
+                    <i class="las la-envelope"></i>
+  
+                    <span class="__cf_email__">info@stonebridgelegal.co.uk</span>
+                  </li>
+                  <li>
+                    <i class="las la-map-marker-alt"></i>
+                    Room 12, 4th Floor, Boardman House, 64 Broadway, E15 1NT
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer Area -->
+  
+      <!-- Footer bottom Area -->
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            © Atorn is Proudly Owned by
+            <a href="#" target="_blank">Team Cipher</a>
+          </p>
+        </div>
+      </div>
+      <!-- End Footer bottom Area -->
+
+    <!-- Go Top -->
+    <div class="go-top">
+      <i class="las la-hand-point-up"></i>
+    </div>
+    <!-- End Go Top -->
+
+    <!-- jQuery first, then Bootstrap JS -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Meanmenu JS -->
+    <script src="assets/js/meanmenu.min.js"></script>
+    <!-- Magnific JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Odometer JS -->
+    <script src="assets/js/odometer.min.js"></script>
+    <!-- Appear JS -->
+    <script src="assets/js/jquery.appear.js"></script>
+    <!-- Form Validator JS -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact JS -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!-- Ajaxchimp JS -->
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/custom.js"></script>
+  </body>
+
+  <!-- Mirrored from templates.hibootstrap.com/atorn/default/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 18:41:45 GMT -->
+</html>

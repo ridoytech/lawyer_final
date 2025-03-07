@@ -1,0 +1,44 @@
+.doctor_availability {
+    background-color: #CCE5D6;
+    padding: 5px 19px;
+    color: #0A8848;
+    border-radius: 20px;
+}
+
+
+.btn-info {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    box-shadow: 1px 2px 8px #22b8cfbd;
+}
+
+.btn-secondary{
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    box-shadow: 1px 2px 8px #6c757d;
+}
+
+.btn-danger{
+    color: #fff;
+    background-color: #bd2130;
+    border-color: #bd2130;
+    box-shadow: 1px 2px 8px #bd2130;
+}
+
+.btn-success{
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    box-shadow: 1px 2px 8px #28a745;
+}
+
+/* #59c4bc */
+
+.btn-primary{
+    color: #fff;
+    background-color: #59c4bc;
+    border-color: #59c4bc;
+    box-shadow: 1px 2px 8px #59c4bc;
+}

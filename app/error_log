@@ -1,0 +1,19 @@
+[10-Dec-2024 21:09:26 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 124
+[10-Dec-2024 21:09:26 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 125
+[10-Dec-2024 21:09:26 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 126
+[10-Dec-2024 21:09:26 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 127
+[10-Dec-2024 21:10:22 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 124
+[10-Dec-2024 21:10:22 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 125
+[10-Dec-2024 21:10:22 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 126
+[10-Dec-2024 21:10:22 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 127
+[11-Dec-2024 11:06:55 UTC] PHP Warning:  Undefined array key "patient_email" in /home/toukir/hms.toukir.co.uk/app/index.php on line 8
+[12-Dec-2024 13:12:20 UTC] PHP Warning:  Undefined array key "patient_email" in /home/toukir/hms.toukir.co.uk/app/index.php on line 8
+[12-Dec-2024 18:08:32 UTC] PHP Warning:  Undefined array key "patient_email" in /home/toukir/hms.toukir.co.uk/app/index.php on line 8
+[13-Dec-2024 02:51:33 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 124
+[13-Dec-2024 02:51:33 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 125
+[13-Dec-2024 02:51:33 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 126
+[13-Dec-2024 02:51:33 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 127
+[13-Dec-2024 04:01:34 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 124
+[13-Dec-2024 04:01:34 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 125
+[13-Dec-2024 04:01:34 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 126
+[13-Dec-2024 04:01:34 UTC] PHP Warning:  Trying to access array offset on null in /home/toukir/hms.toukir.co.uk/app/logics.php on line 127
