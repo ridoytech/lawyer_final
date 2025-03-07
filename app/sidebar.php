@@ -72,7 +72,7 @@ if (isset($session_email)) {
                         ?>
 
                         <?php
-                        if (isset($user_type) && $user_type == 'admin' || $user_type == 'doctor' || $user_type == 'customer') { ?>
+                        if (isset($user_type) && $user_type == 'admin' || $user_type == 'lawyer' || $user_type == 'customer') { ?>
                             <li class="">
                                 <a href="index.php"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
 
@@ -84,6 +84,12 @@ if (isset($session_email)) {
 
                             <li>
                                 <a href="projects.php"><i class="fa icon-plus"></i><span> Projects</span></a>
+                            </li>
+                            <li>
+                                <a href="lawyerType.php"><i class="fa icon-plus"></i><span> Lawyer Type </span></a>
+                            </li>
+                            <li>
+                                <a href="lawyerCategory.php"><i class="fa icon-plus"></i><span> Lawyer Category </span></a>
                             </li>
 
                            

@@ -46,6 +46,53 @@ if (isset($_POST['login_customer'])) {
 
 
 
+// add logic for lawyer type 
+
+
+
+if (isset($_POST['add_lawyer_type'])) {
+  $lawyer_type = $_POST['lawyer_type'];
+
+  $mysqli->query("INSERT INTO lawyer_list_type (lawyer_type) VALUES ('$lawyer_type')");
+
+  $_SESSION['message'] = "Lawyer Type has been added";
+  $_SESSION['message_type'] = 'success';
+  header("location:lawyerType.php");
+}
+
+// delete lawyer type logic 
+
+if (isset($_GET['lawyer_type_delete_id'])) {
+  $id = $_GET['lawyer_type_delete_id'];
+
+  $mysqli->query("DELETE FROM lawyer_list_type WHERE id=$id");
+
+  $_SESSION['message'] = "Lawyer Type has been Deleted";
+  $_SESSION['message_type'] = 'danger';
+  header("location:lawyerType.php");
+}
+
+
+
+// add logic for lawyer Category 
+
+if (isset($_POST['add_lawyer_category'])) {
+  $service_title = $_POST['service_title'];
+  $service_des = $_POST['service_des'];
+
+  $service_image = $_FILES['service_image']['name'];
+  $tmpName = $_FILES['service_image']['tmp_name'];
+  $folder = 'lawyerCategory/' . $service_image;
+
+
+  $mysqli->query("INSERT INTO service_crud (service_title, service_des, service_image) VALUES ('$service_title', '$service_des', '$service_image')");
+  move_uploaded_file($tmpName, $folder);
+
+  $_SESSION['message'] = "Lawyer Category has been added";
+  $_SESSION['message_type'] = 'success';
+  header("location:lawyerCategory.php");
+}
+
 
 
 
