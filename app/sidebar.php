@@ -82,14 +82,15 @@ if (isset($session_email)) {
                         if (isset($user_type) && $user_type == 'admin') { ?>
 
 
-                            <li>
-                                <a href="projects.php"><i class="fa icon-plus"></i><span> Projects</span></a>
-                            </li>
+                          
                             <li>
                                 <a href="lawyerType.php"><i class="fa icon-plus"></i><span> Lawyer Type </span></a>
                             </li>
                             <li>
                                 <a href="lawyerCategory.php"><i class="fa icon-plus"></i><span> Lawyer Category </span></a>
+                            </li>
+                            <li>
+                                <a href="lawyer.php"><i class="fa icon-plus"></i><span> All Lawyer </span></a>
                             </li>
 
                            

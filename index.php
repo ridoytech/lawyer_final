@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zxx">
-  <!-- Mirrored from templates.hibootstrap.com/atorn/default/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Mar 2025 18:40:42 GMT -->
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
