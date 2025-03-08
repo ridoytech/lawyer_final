@@ -94,6 +94,171 @@ if (isset($_POST['add_lawyer_category'])) {
 }
 
 
+// update logic for lawyer Category 
+
+if (isset($_POST['udpate_lawyer_category'])) {
+  $lawyer_id = $_POST['id'];
+  $service_title = $_POST['service_title'];
+  $service_des = $_POST['service_des'];
+
+
+  $service_image = $_FILES['service_image']['name'];
+  $old_image = $_POST['old_image'];
+
+  if ($service_image != '') {
+    $service_image = $_FILES['service_image']['name'];
+  } else {
+    $service_image = $old_image;
+  }
+  $tmpName = $_FILES['service_image']['tmp_name'];
+  $folder = 'lawyerCategory/' . $service_image;
+
+
+  $mysqli->query("UPDATE `service_crud` SET `service_title` = '$service_title', `service_des` = '$service_des', `service_image` = '$service_image' WHERE id=$lawyer_id");
+  move_uploaded_file($tmpName, $folder);
+
+  $_SESSION['message'] = "Lawyer Category has been Successfully";
+  $_SESSION['message_type'] = 'warning';
+  header('location:lawyerCategory.php');
+}
+
+
+
+
+// delete lawyer Category logic 
+
+if (isset($_GET['lawyer_category_delete_id'])) {
+  $id = $_GET['lawyer_category_delete_id'];
+
+  $mysqli->query("DELETE FROM service_crud WHERE id=$id");
+
+  $_SESSION['message'] = "Lawyer Category has been Deleted";
+  $_SESSION['message_type'] = 'danger';
+  header("location:lawyerCategory.php");
+}
+
+
+
+// add logic for lawyer  
+
+if (isset($_POST['add_lawyer'])) {
+  $lawyer_name = $_POST['lawyer_name'];
+  $lawyer_type = $_POST['lawyer_type'];
+  $lawyer_biography = $_POST['lawyer_biography'];
+  $lawyer_research = $_POST['lawyer_research'];
+  $lawyer_address = $_POST['lawyer_address'];
+  $day_1 = $_POST['day_1'];
+  $start_time_1 = $_POST['start_time_1'];
+  $end_time_1 = $_POST['end_time_1'];
+  $day_2 = $_POST['day_2'];
+  $start_time_2 = $_POST['start_time_2'];
+  $end_time_2 = $_POST['end_time_2'];
+  $day_3 = $_POST['day_3'];
+  $start_time_3 = $_POST['start_time_3'];
+  $end_time_3 = $_POST['end_time_3'];
+  $day_4 = $_POST['day_4'];
+  $start_time_4 = $_POST['start_time_4'];
+  $end_time_4 = $_POST['end_time_4'];
+  $day_5 = $_POST['day_5'];
+  $start_time_5 = $_POST['start_time_5'];
+  $end_time_5 = $_POST['end_time_5'];
+  $day_6 = $_POST['day_6'];
+  $start_time_6 = $_POST['start_time_6'];
+  $end_time_6 = $_POST['end_time_6'];
+  $education_qualification = $_POST['education_qualification'];
+
+
+  $lawyer_picture = $_FILES['lawyer_picture']['name'];
+  $tmpName = $_FILES['lawyer_picture']['tmp_name'];
+  $folder = 'lawyerPicture/' . $lawyer_picture;
+
+
+  $mysqli->query("INSERT INTO lawyer_crud (lawyer_name, lawyer_type, lawyer_biography, lawyer_research, lawyer_address, day_1, start_time_1, end_time_1, day_2, start_time_2, end_time_2, day_3, start_time_3, end_time_3, day_4, start_time_4, end_time_4, day_5, start_time_5, end_time_5, day_6, start_time_6, end_time_6, lawyer_picture) VALUES ('$lawyer_name', '$lawyer_type', '$lawyer_biography', '$lawyer_research', '$lawyer_address', '$day_1', '$start_time_1', '$end_time_1', '$day_2', '$start_time_2', '$end_time_2', '$day_3', '$start_time_3', '$end_time_3', '$day_4', '$start_time_4', '$end_time_4', '$day_5', '$start_time_5', '$end_time_5', '$day_6', '$start_time_6', '$end_time_6', '$lawyer_picture')");
+  move_uploaded_file($tmpName, $folder);
+
+  $_SESSION['message'] = "Lawyer has been added";
+  $_SESSION['message_type'] = 'success';
+  header("location:lawyer.php");
+}
+
+
+// update logic for lawyer  
+
+if (isset($_POST['update_lawyer'])) {
+  $lawyer_id = $_POST['id'];
+  $lawyer_name = $_POST['lawyer_name'];
+  // echo $lawyer_name;
+  // die();
+  $lawyer_type = $_POST['lawyer_type'];
+  $lawyer_address = $_POST['lawyer_address'];
+  $day_1 = $_POST['day_1'];
+  $start_time_1 = $_POST['start_time_1'];
+  $end_time_1 = $_POST['end_time_1'];
+  $day_2 = $_POST['day_2'];
+  $start_time_2 = $_POST['start_time_2'];
+  $end_time_2 = $_POST['end_time_2'];
+  $day_3 = $_POST['day_3'];
+  $start_time_3 = $_POST['start_time_3'];
+  $end_time_3 = $_POST['end_time_3'];
+  $day_4 = $_POST['day_4'];
+  $start_time_4 = $_POST['start_time_4'];
+  $end_time_4 = $_POST['end_time_4'];
+  $day_5 = $_POST['day_5'];
+  $start_time_5 = $_POST['start_time_5'];
+  $end_time_5 = $_POST['end_time_5'];
+  $day_6 = $_POST['day_6'];
+  $start_time_6 = $_POST['start_time_6'];
+  $end_time_6 = $_POST['end_time_6'];
+  $education_qualification = $_POST['education_qualification'];
+  $lawyer_biography = $_POST['lawyer_biography'];
+  $lawyer_research = $_POST['lawyer_research'];
+ 
+  // echo $lawyer_research;
+  // die();
+
+
+
+  $lawyer_picture = $_FILES['lawyer_picture']['name'];
+  $old_image = $_POST['old_image'];
+
+  if ($lawyer_picture != '') {
+    $lawyer_picture = $_FILES['lawyer_picture']['name'];
+  } else {
+    $lawyer_picture = $old_image;
+  }
+  $tmpName = $_FILES['lawyer_picture']['tmp_name'];
+  $folder = 'lawyerPicture/' . $lawyer_picture;
+
+
+  $mysqli->query("UPDATE `lawyer_crud` SET `lawyer_name` = '$lawyer_name', `lawyer_type` = '$lawyer_type', `lawyer_address` = '$lawyer_address', `day_1` = '$day_1', `start_time_1` = '$start_time_1', `end_time_1` = '$end_time_1', `day_2` = '$day_2', `start_time_2` = '$start_time_2', `end_time_2` = '$end_time_2', `day_3` = '$day_3', `start_time_3` = '$start_time_3', `end_time_3` = '$end_time_3', `day_4` = '$day_4', `start_time_4` = '$start_time_4', `end_time_4` = '$end_time_4', `day_5` = '$day_5', `start_time_5` = '$start_time_5', `end_time_5` = '$end_time_5', `day_6` = '$day_6', `start_time_6` = '$start_time_6', `end_time_6` = '$end_time_6', `education_qualification` = '$education_qualification', `lawyer_biography` = '$lawyer_biography', `lawyer_research` = '$lawyer_research', `lawyer_picture` = '$lawyer_picture' WHERE id=$lawyer_id");
+  move_uploaded_file($tmpName, $folder);
+
+  $_SESSION['message'] = "Lawyer has been Successfully";
+  $_SESSION['message_type'] = 'warning';
+  header('location:lawyer.php');
+}
+
+
+
+
+// delete lawyer  logic 
+
+if (isset($_GET['lawyer_delete_id'])) {
+  $id = $_GET['lawyer_delete_id'];
+
+  $mysqli->query("DELETE FROM lawyer_crud WHERE id=$id");
+
+  $_SESSION['message'] = "Lawyer has been Deleted";
+  $_SESSION['message_type'] = 'danger';
+  header("location:lawyer.php");
+}
+
+
+
+
+
+
+
 
 
 // ambulance add Logic

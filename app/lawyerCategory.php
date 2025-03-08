@@ -98,8 +98,8 @@ include('db.php');
                                                 <td><?php echo ($row['service_des']) ?></td>
                                                 <td><img style="width:50px" src="lawyerCategory/<?php echo ($row['service_image']) ?>" alt=""></td>
                                                 <td>
-                                                    <!-- <a href="updateProject.php?project_id=<?php echo $row['id']; ?>" type="submit" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></a> -->
-                                                    <a href="logics.php?lawyer_type_delete_id=<?php echo $row['id']; ?>" type="submit" data-type="confirm" class="btn btn-danger js-sweetalert" onclick="return confirm('Are You Sure?')" title="Delete"><i class="fa fa-trash-o"></i></a>
+                                                    <a href="lawyerCategoryUpdate.php?lawyer_id=<?php echo $row['id']; ?>" type="submit" class="btn btn-info" title="Edit"><i class="fa fa-edit"></i></a>
+                                                    <a href="logics.php?lawyer_category_delete_id=<?php echo $row['id']; ?>" type="submit" data-type="confirm" class="btn btn-danger js-sweetalert" onclick="return confirm('Are You Sure?')" title="Delete"><i class="fa fa-trash-o"></i></a>
                                                 </td>
                                             </tr>
                                             <?php endwhile; ?>
