@@ -255,7 +255,7 @@ include('app/db.php');
                 <p>Senior Attorney</p>
 
                 <div class="about-btn">
-                  <a href="lawyerDetail.php?lawyer_id=<?php echo ($row['id']) ?>" class="default-btn-one">Book Now</a>
+                  <a href="practice.php?lawyer_id=<?php echo ($row['id']) ?>" class="default-btn-one">Book Now</a>
                 </div>
               </div>
             </div>
